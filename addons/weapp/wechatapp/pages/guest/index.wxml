@@ -1,0 +1,21 @@
+<view class="container">
+
+<form bindsubmit="formSubmit">
+  <input name="user_id" hidden value="{{user_id}}"/>
+  <view class="f-line">
+    <text class="f-title">姓名</text>
+    <view class="f-right">
+      <input type='text' placeholder='请输入姓名' data-id="name" name="name" value="{{name}}" bindinput="inInput"/>
+    </view>
+  </view>
+  <view class="f-line"> 
+     <text class="f-title">手机号</text> 
+     <view class="f-right">
+    <input type='text' maxlength="11" placeholder='请输入手机号' data-id="mobile" name="mobile" value="{{mobile}}" bindinput="inInput"/> 
+     </view> 
+   </view> 
+  <textarea class="beizhu" placeholder='请输入备注' data-id="desc" name="desc" value="{{desc}}" bindinput="inInput"></textarea>
+
+  <button formType="submit">提交</button>
+</form>
+</view>

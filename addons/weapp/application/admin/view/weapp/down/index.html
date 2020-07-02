@@ -1,0 +1,83 @@
+<style>
+    .profile-avatar-container {
+        position: relative;
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    .profile-avatar-container .profile-user-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-avatar-container .profile-avatar-text {
+        display: none;
+    }
+
+    .profile-avatar-container:hover .profile-avatar-text {
+        display: block;
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        background: #444;
+        opacity: .6;
+        color: #fff;
+        top: 0;
+        left: 0;
+        line-height: 100px;
+        text-align: center;
+    }
+
+    .profile-avatar-container button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        opacity: 0;
+    }
+</style>
+<div class="row animated fadeInRight">
+    <div class="col-md-4">
+        <div class="box box-success">
+            <img src="http://img.bokezone.com/weappdemo.gif" style="width: 100%" alt="">
+        </div>
+
+    </div>
+    <div class="col-md-8">
+
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label" style="text-align: left">当前APPID</label>
+                <div class="col-sm-6">
+                    <input type="text" readonly class="form-control" value="{$info['appid']}" id="inputEmail3">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" re class="col-sm-2 control-label" style="text-align: left">当前接口地址</label>
+                <div class="col-sm-6">
+                    <input class="form-control" value="{$info['api_url']}" readonly id="inputPassword3" placeholder="">
+                </div>
+            </div>
+        </form>
+
+        <h2>请注意</h2>
+
+        <blockquote>
+            <p>1. APPID 以及接口地址在插件 <span style="color: red">“配置”</span>里修改</p>
+        </blockquote>
+
+        <blockquote>
+            <p>2.1 在插件 “配置” 修改APPID参数后你可以在开发工具里<span style="color: red">修改"project.config.json" 的appid 为你当前的appid</span>  </p>
+            <p>2.2 在插件“配置” 修改接口地址后你可以在开发工具里 <span style="color: red">修改"utils/request.js" 的 baseUrl 为你当前的接口地址 </span> </p>
+        </blockquote>
+
+        <blockquote>
+            <p>3. <b>或者</b>也可以重新下载模板在开发工具导入下载的模板   <span style="color: red">无需配置</span> </p>
+        </blockquote>
+
+        <div style="text-align: center">
+            <a class="btn btn-success" href="{:url('/admin/weapp/down/down')}" role="button">小程序模板下载</a>
+        </div>
+    </div>
+</div>

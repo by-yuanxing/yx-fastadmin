@@ -1,0 +1,87 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="about_box">
+                <h1 class="about_h1">公司简介</h1><span class="about_span">ABOUT US</span>
+                <section>
+                    <img align="left" src="{$about.image}" alt="公司简介">
+                    <p class="about_contents">
+                        {$about.description}
+                    </p>
+                    <a href="{:addon_url('weapp/about')}" class="about_more">更多&gt;&gt;</a>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="index_product">
+                <h1 class="about_h1">产品展示</h1>
+                <span class="about_span">Product</span>
+                <div class="product_list">
+                    {volist name="product" id="vo"}
+                    <div class="col-sm-4 col-md-3 col-mm-6 product_img">
+                        <a href="{:addon_url('weapp/product/show',['id'=>$vo.id])}">
+                            <img src="{$vo.image}" class="opacity_img" alt="">
+                        </a>
+                        <p class="product_title"><a href="" title="">{$vo.name}</a>
+                        </p>
+                    </div>
+                    {/volist}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="index_product">
+                <h1 class="about_h1">案例展示</h1>
+                <span class="about_span">Cases</span>
+                <div class="product_list">
+                    {volist name="cases" id="vo"}
+                    <div class="col-sm-4 col-md-3 col-mm-6 product_img">
+                        <a href="{:addon_url('weapp/cases/show',['id'=>$vo.id])}">
+                            <img src="{$vo.image}" class="opacity_img" alt="">
+                        </a>
+                        <p class="product_title"><a href="" title="">{$vo.name}</a>
+                        </p>
+                    </div>
+                    {/volist}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-7">
+            <div class="index_product">
+                <h1 class="about_h1">品牌展示</h1>
+                <span class="about_span">Brand</span>
+                <div class="product_list">
+                    {volist name="brand" id="vo"}
+                    <div class="col-sm-4 col-md-3 col-mm-6 product_img">
+                        <a href="{:addon_url('weapp/brand/show',['id'=>$vo.id])}">
+                            <img src="{$vo.image}" class="opacity_img" alt="">
+                        </a>
+                        <p class="product_title"><a href="" title="">{$vo.name}</a>
+                        </p>
+                    </div>
+                    {/volist}
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-5" style="padding-top: 5px;">
+            {include file="include/contact" /}
+        </div>
+    </div>
+</div>

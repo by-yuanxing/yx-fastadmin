@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <!-- right -->
+        <div class="col-xs-12 col-sm-8 col-md-9" style="float:right">
+            <div class="list_box">
+                <h2 class="left_h1">{$nav_button}</h2>
+                <div class="contents">
+                    <h1 class="contents_title">{$data.name}</h1>
+                    <span style="color:#505050;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:14px;line-height:22px;">
+                        {$data.content}
+                    </span>
+                </div>
+                <div class="point">
+                    <li>下一篇：{$pre}</li>
+                    <li>上一篇：{$next}</li>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- left -->
+        {include file="include/page_left" /}
+
+    </div>
+</div>

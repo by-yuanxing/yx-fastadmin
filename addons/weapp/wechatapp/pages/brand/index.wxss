@@ -1,0 +1,4 @@
+/* pages/brand/index.wxss */
+.list-content .item image{
+  height: 220rpx;
+}

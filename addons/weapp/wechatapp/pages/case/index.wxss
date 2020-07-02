@@ -1,0 +1,23 @@
+/* pages/case/index.wxss */
+
+.category{
+ text-align: center;
+ position: relative;
+ padding: 20rpx 0;
+ border-top:  20rpx solid #f3f1f1;
+ border-bottom:20rpx solid #f3f1f1;
+}
+.category text{
+display:block;
+width:100%;
+text-align:center;
+font-size: 30rpx;
+}
+
+.category image{
+  position: absolute;
+  right: 10px;
+  width:50rpx;height:50rpx;
+  top:15rpx;
+  z-index:-10;
+}

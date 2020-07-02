@@ -1,0 +1,28 @@
+<style>
+    .left_nav_ul .active{
+        border-left: 1px solid #337ab7;
+    }
+    .left_nav_ul .active a{
+        color:#337ab7
+    }
+</style>
+
+<div class="col-xs-12 col-sm-4 col-md-3" >
+    {notempty name="cat_info.sub"}
+    <div class="left_nav" id="categories">
+        <h1 class="left_h1">栏目导航</h1>
+        <ul class="left_nav_ul" id="firstpane">
+            {volist name="cat_info.sub" id="vo"}
+            <li class="{$vo.active}">
+                <a  class="biglink" href="{$vo.url}">{$vo.title}</a>
+            </li>
+            {/volist}
+        </ul>
+    </div>
+    {/notempty}
+    {empty name="cat_info.sub"}
+      <div style="height: 16px"></div>
+    {/empty}
+
+    {include file="include/contact" /}
+</div>

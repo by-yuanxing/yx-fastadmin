@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="applicable-device" content="pc,mobile">
+    <meta name="renderer" content="webkit">
+    <title>{$seo_title}</title>
+    <meta name="keywords" content="{$seo_keywords}">
+    <link href="__ADDON__/css/bootstrap.css" rel="stylesheet">
+    <link href="__ADDON__/css/style.css" rel="stylesheet">
+    <style>
+        body {
+            overflow-y: scroll;
+            -ms-overflow-style: none;
+            overflow: -moz-scrollbars-none;
+        }
+
+        body::-webkit-scrollbar {
+            width: 0 !important
+        }
+    </style>
+    <script src="__CDN__/assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="__CDN__/assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="__ADDON__/js/common.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container" >
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="{:addon_url('weapp/index')}">
+                    <img src="{$app.logo}" id="logo">
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse pull-right">
+                <ul class="nav navbar-nav">
+                    {volist name="menu" id="vo"}
+                    <li class="{$vo.active}">
+                        <a href="{$vo.url}">{$vo.title}</a>
+                    </li>
+                    {/volist}
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <ol class="carousel-indicators">
+            {volist name="banner" id="vo" key="k"}
+            <li data-target="#myCarousel" data-slide-to="{$k}" class="{if condition='($k == 1)'}active{/if}"></li>
+            {/volist}
+        </ol>
+        <div class="carousel-inner">
+            {volist name="banner" id="vo" key="k"}
+            <div class="item {if condition='($k == 1)'}active{/if}">
+                <img src="{$vo}" style="display:block;max-width: 100%;width: 100%;max-height: 500px;min-height: 220px">
+            </div>
+            {/volist}
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</header>
+{__CONTENT__}
+<nav class="navbar navbar-default navbar-fixed-bottom footer_nav">
+    <div class="foot_nav">
+        <a href="{:addon_url('weapp/index')}"><span class="glyphicon glyphicon glyphicon-home btn-lg"
+                                                    aria-hidden="true"></span>首页</a>
+    </div>
+    <div class="foot_nav">
+        <a href="tel:{$app.phone}"><span class="glyphicon glyphicon-phone btn-lg" aria-hidden="true"></span>手机</a>
+    </div>
+    <div class="foot_nav">
+        <a href="{:addon_url('weapp/product')}"><span class="glyphicon glyphicon-th-list btn-lg"
+                                                      aria-hidden="true"></span>产品</a>
+    </div>
+    <div class="foot_nav">
+        <a id="gototop" href="#"><span class="glyphicon glyphicon-circle-arrow-up btn-lg"
+                                       aria-hidden="true"></span>顶部</a>
+    </div>
+</nav>
+<footer>
+    <div class="copyright">
+        <p>
+            <a href="http://www.miitbeian.gov.cn/" target="_blank">备案号：{$app.icp}</a>
+        </p>
+        <p class="copyright_p">地址：{$app.address}
+            电话：{$app.phone}</p>
+    </div>
+</footer>
+</body>
+</html>

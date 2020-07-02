@@ -1,0 +1,103 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  box-sizing: border-box;
+    color: #353535;
+    font-size: 30rpx;
+} 
+
+
+.footer{
+  background-color: #dedede;
+  text-align: center;
+  color: #fff;
+  padding: 20rpx 0 130rpx 0;
+}
+
+
+.menu {
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: content-box;
+  flex-wrap: nowrap;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  border-top: 1px solid #dedede;
+  padding: 10rpx 0 5rpx 0;
+  z-index: 100
+}
+
+.menu  .item{
+ text-align: center;
+ flex: 1;
+}
+
+.menu view{
+  font-size: 22rpx;
+}
+
+.menu  image{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.goods-text{
+  padding: 0 10rpx;
+  font-size:28rpx;
+  color:#666666;
+  line-height: 56rpx;
+  margin-bottom: 30rpx;
+}
+.des-imgs{
+  width:100%;
+}
+.des-imgs image{
+  width: 100%;
+}
+
+/* 产品列表 */
+.list-content{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.list-content .list{
+  margin: 30rpx 10rpx;
+}
+
+
+.list-content .item{
+  display: inline-block;
+  width: 50%;
+  /* padding-right: 5rpx; */
+  box-sizing: border-box;
+}
+
+.list-content .item:nth-child(odd){
+  padding-right: 5rpx;
+}
+
+.list-content .item:nth-child(even){
+  padding-left: 5rpx;
+}
+
+.list-content .title{
+  text-align: center;
+  overflow: hidden;
+  height: 40rpx;
+  width: 100%;
+}
+
+.list-content .item .image{
+padding-top:10rpx 10rpx;
+}
+
+.list-content .item image{
+  width: 100%;
+  height: 320rpx;
+  box-sizing: border-box;
+  border: 1px solid #dedede;
+}

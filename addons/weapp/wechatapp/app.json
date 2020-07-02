@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/about/index",
+    "pages/product/index",
+    "pages/case/index",
+    "pages/brand/index",
+    "pages/about/contact",
+    "pages/detail/index",
+    "pages/guest/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "企业官网小程序",
+    "navigationBarTextStyle": "black"
+  }
+}

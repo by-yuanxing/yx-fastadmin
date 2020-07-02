@@ -1,0 +1,156 @@
+<!--index.wxml-->
+<view class="container">
+
+<!-- 导航 start -->
+   <view class='banner-view'>
+<swiper class='banner' autoplay="true"  interval="3000" duration="1000">
+  <block wx:for="{{banner}}" wx:key="id">
+    <swiper-item>
+     <image src="{{item.image}}"  />
+    </swiper-item>
+  </block>
+</swiper>
+   </view>
+   <!-- 导航 end -->
+
+<!-- 分类 srart -->
+<view class='category'>
+     <view class="icon"  wx:for="{{category}}" wx:key="id" >
+        <navigator url="{{item.url}}" hover-class='none'>
+        <image  class="slide-image" src='{{item.image}}'></image><text>{{item.catname}}</text> 
+      </navigator>
+      </view>
+</view>
+<!-- 分类 end -->
+
+
+<!-- 品牌介绍 start -->
+<view class='brand'>
+<view class='cat-item'>
+<text class='title'>品牌介绍</text>
+<navigator url='../brand/index'  class='more'>更多+</navigator>
+</view>
+<scroll-view class='pinpai' scroll-x="true" style=" white-space: nowrap; display: flex" >
+   <view class='item' wx:for="{{brand}}" wx:key="id">
+   <navigator url='../detail/index?id={{item.id}}&cat=brand' hover-class='none'>
+      <image  src='{{item.image}}' />
+      <view>{{item.name}}</view>
+   </navigator>
+   </view>
+</scroll-view>
+</view>
+<!-- 品牌介绍 end -->
+
+<view class='product'>
+<view class='cat-item'>
+<text class='title'>产品展示</text>
+<navigator  url='../product/index' class='more'>更多+</navigator>
+</view>
+
+<view class='list-content'>
+
+<view class='list'>
+
+ <view  class='item' wx:for="{{product}}" wx:key="id">
+   <navigator hover-class='none'  url='../detail/index?id={{item.id}}&cat=product'  class='image'>
+   <image lazy-load='true' src='{{item.image}}'></image> 
+    <view class='title'>{{item.name}}</view>
+   </navigator>
+  </view>
+
+
+</view>
+
+</view>
+
+</view>
+
+<view class='contact-bg' style=''>
+   <image src='{{app.call_bg}}'></image>
+      <button class='button' bindtap='call'>立即咨询</button>
+</view>
+
+
+<!-- 公司简介 start -->
+<view class='about'>
+<view class='cat-item'>
+<text class='title'>公司简介</text>
+<navigator  url='../about/index' class='more'>更多+</navigator>
+</view>
+
+<view class='content'>
+<view class='about-bg' style=''>
+   <image src='{{about.image}}' ></image>
+</view>
+<view class='text'>
+   {{about.description}}
+</view>
+</view>
+</view>
+<!-- 公司简介 end -->
+
+<!-- 案例展示 start -->
+<view class='product'>
+<view class='cat-item'>
+<text class='title'>案例展示</text>
+<navigator  url='../case/index'  class='more'>更多+</navigator>
+</view>
+
+<view class='list-content'>
+
+<view class='list'>
+
+<view  class='item' wx:for="{{cases}}" wx:key="id">
+   <navigator hover-class='none'  url='../detail/index?id={{item.id}}&cat=cases'  class='image'>
+   <image lazy-load='true' src='{{item.image}}'></image> 
+    <view class='title'>{{item.name}}</view>
+   </navigator>
+</view>
+
+</view>
+
+</view>
+
+</view>
+<!-- 案例展示 end -->
+
+<view class='footer'>
+ 技术支持QQ：731633799
+</view>
+
+<view class='menu'>
+    <view class='item'> 
+    <navigator url='../index/index'  open-type="redirect" hover-class='none'>
+     <image src='../../image/index.png'></image>
+     <view>首页</view>
+     </navigator>
+    </view>
+
+     <view class='item'>
+     <navigator  url='../product/index' hover-class='none'>
+     <image src='../../image/cat.png'></image>
+     <view>所有产品</view>
+     </navigator>
+    </view>
+
+
+     <view class='item' bindtap='call'>
+      <image src='../../image/phone.png'></image>
+      <view>一键拨号</view>
+    </view>
+
+     <view class='item' bindtap='nav'>
+     <image src='../../image/nav.png'></image>
+     <view>一键导航</view>
+    </view>
+</view>
+
+
+    <view class="page-body-line">
+        <contact-button size="25" session-from="weapp" type="default-light"></contact-button>
+    </view>
+    <view class="guest" style='background-color:#2072cf;text-align:center'>
+        <image src='../../image/guest.png'  bindtap="guest" style='diplay:inline-block;width:50rpx;height:50rpx;margin-top:12rpx;' />
+    </view>
+
+</view>
