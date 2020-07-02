@@ -1,0 +1,8 @@
+[ 2020-06-15T11:44:33+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000122s ]
+[ info ] [ LOG ] INIT File
+[ 2020-06-15T11:44:33+08:00 ][ info ] [ CACHE ] INIT File
+[ 2020-06-15T11:44:33+08:00 ][ info ] [ BEHAVIOR ] Run \addons\banip\Banip @app_init [ RunTime:0.005205s ]
+[ 2020-06-15T11:44:33+08:00 ][ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000726s ]
+[ 2020-06-15T11:44:33+08:00 ][ info ] [ BEHAVIOR ] Run \addons\epay\Epay @app_init [ RunTime:0.000048s ]
+[ 2020-06-15T11:44:33+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000421s ]
+[ 2020-06-15T11:44:33+08:00 ][ info ] [ DB ] INIT mysql
