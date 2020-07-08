@@ -11,7 +11,10 @@ use think\exception\PDOException;
 /**
  * 第三方登录服务类
  *
- * @author Karson
+ * @author Karson 
+ */
+/**
+ *  修改Date:2020.7.8
  */
 class Service
 {

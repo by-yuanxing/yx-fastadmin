@@ -7,7 +7,7 @@ use think\Config;
 use think\Session;
 
 /**
- * QQ
+ * QQ Date:2020.7.8
  */
 class Qq
 {

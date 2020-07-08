@@ -25,7 +25,7 @@ class Index extends Controller
         parent::_initialize();
         $config = get_addon_config('third');
 		
-        $this->app = new Application($config);//实列化Application类 传入$config参数
+        $this->app = new Application($config);//实列化Application类 传入$config参数!!
 		//dump($this->app); 
     }
 
