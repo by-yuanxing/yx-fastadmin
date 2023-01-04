@@ -212,12 +212,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -270,12 +270,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Promise\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -330,12 +330,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Psr7\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -389,12 +389,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "think\\": "src/"
-                },
                 "files": [
                     "src/common.php"
-                ]
+                ],
+                "psr-4": {
+                    "think\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -443,9 +443,6 @@
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "Complex\\": "classes/src/"
-                },
                 "files": [
                     "classes/src/functions/abs.php",
                     "classes/src/functions/acos.php",
@@ -489,7 +486,10 @@
                     "classes/src/operations/multiply.php",
                     "classes/src/operations/divideby.php",
                     "classes/src/operations/divideinto.php"
-                ]
+                ],
+                "psr-4": {
+                    "Complex\\": "classes/src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -537,9 +537,6 @@
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "Matrix\\": "classes/src/"
-                },
                 "files": [
                     "classes/src/functions/adjoint.php",
                     "classes/src/functions/antidiagonal.php",
@@ -557,7 +554,10 @@
                     "classes/src/operations/multiply.php",
                     "classes/src/operations/divideby.php",
                     "classes/src/operations/divideinto.php"
-                ]
+                ],
+                "psr-4": {
+                    "Matrix\\": "classes/src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -851,12 +851,12 @@
             "version": "3.3.33",
             "source": {
                 "type": "git",
-                "url": "https://github.com/overtrue/wechat.git",
+                "url": "https://github.com/w7corp/easywechat.git",
                 "reference": "78e5476df330754040d1c400d0bca640d5b77cb7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/overtrue/wechat/zipball/78e5476df330754040d1c400d0bca640d5b77cb7",
+                "url": "https://api.github.com/repos/w7corp/easywechat/zipball/78e5476df330754040d1c400d0bca640d5b77cb7",
                 "reference": "78e5476df330754040d1c400d0bca640d5b77cb7",
                 "shasum": ""
             },
@@ -878,12 +878,12 @@
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "EasyWeChat\\": "src/"
-                },
                 "files": [
                     "src/Payment/helpers.php"
-                ]
+                ],
+                "psr-4": {
+                    "EasyWeChat\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -902,6 +902,7 @@
                 "weixin",
                 "weixin-sdk"
             ],
+            "abandoned": "w7corp/easywechat",
             "time": "2018-10-17T12:27:27+00:00"
         },
         {
@@ -1529,12 +1530,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Mbstring\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1586,12 +1587,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php70\\": ""
-                },
                 "files": [
                     "bootstrap.php"
                 ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php70\\": ""
+                },
                 "classmap": [
                     "Resources/stubs"
                 ]
@@ -1687,16 +1688,16 @@
         },
         {
             "name": "topthink/framework",
-            "version": "v5.0.24",
+            "version": "v5.0.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/top-think/framework.git",
-                "reference": "c255c22b2f5fa30f320ecf6c1d29f7740eb3e8be"
+                "reference": "643c58ed1bd22a2823ce5e95b3b68a5075f9087c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/top-think/framework/zipball/c255c22b2f5fa30f320ecf6c1d29f7740eb3e8be",
-                "reference": "c255c22b2f5fa30f320ecf6c1d29f7740eb3e8be",
+                "url": "https://api.github.com/repos/top-think/framework/zipball/643c58ed1bd22a2823ce5e95b3b68a5075f9087c",
+                "reference": "643c58ed1bd22a2823ce5e95b3b68a5075f9087c",
                 "shasum": ""
             },
             "require": {
@@ -1734,7 +1735,7 @@
                 "orm",
                 "thinkphp"
             ],
-            "time": "2019-01-11T08:04:58+00:00"
+            "time": "2022-10-25T14:59:38+00:00"
         },
         {
             "name": "topthink/think-captcha",
@@ -1756,12 +1757,12 @@
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "think\\captcha\\": "src/"
-                },
                 "files": [
                     "src/helper.php"
-                ]
+                ],
+                "psr-4": {
+                    "think\\captcha\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1778,23 +1779,23 @@
         },
         {
             "name": "topthink/think-installer",
-            "version": "v1.0.12",
+            "version": "v1.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/top-think/think-installer.git",
-                "reference": "1be326e68f63de4e95977ed50f46ae75f017556d"
+                "reference": "eae1740ac264a55c06134b6685dfb9f837d004d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/top-think/think-installer/zipball/1be326e68f63de4e95977ed50f46ae75f017556d",
-                "reference": "1be326e68f63de4e95977ed50f46ae75f017556d",
+                "url": "https://api.github.com/repos/top-think/think-installer/zipball/eae1740ac264a55c06134b6685dfb9f837d004d1",
+                "reference": "eae1740ac264a55c06134b6685dfb9f837d004d1",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0"
+                "composer-plugin-api": "^1.0||^2.0"
             },
             "require-dev": {
-                "composer/composer": "1.0.*@dev"
+                "composer/composer": "^1.0||^2.0"
             },
             "type": "composer-plugin",
             "extra": {
@@ -1815,7 +1816,7 @@
                     "email": "448901948@qq.com"
                 }
             ],
-            "time": "2017-05-27T06:58:09+00:00"
+            "time": "2021-03-25T08:34:02+00:00"
         }
     ],
     "packages-dev": [],
